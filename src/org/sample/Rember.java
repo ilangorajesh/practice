@@ -13,8 +13,16 @@ public static void main(String[] args) {
 	driver.manage().window().maximize();
 	WebElement username = driver.findElement(By.id("email"));
 	username.sendKeys("ilango");
+	
 	String title = driver.getTitle();
 	System.out.println(title);
+	
+	WebElement pass = driver.findElement(By.id("pass"));
+	pass.sendKeys("2735737");
+	String url = driver.getCurrentUrl();
+	System.out.println(url);
+
+	
 	
 	
 }
